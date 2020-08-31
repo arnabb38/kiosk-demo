@@ -25,7 +25,7 @@ a {
 /* initial landing page start */
 
 #initLanding {
-    background-image: url(./train-back.jpg);
+    background-image: url(./assets/train-back.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
