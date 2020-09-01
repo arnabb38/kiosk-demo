@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">    
+    <title>Registration</title>
+</head>
+<body>
+    <section id="initLanding">
+        <div class="initLanding container">
+            <div class="reg-container">
+                <div id="reg-form1">
+                    <h2>Login with Phone</h2>
+                    <hr>   
+                    <div class="text-center">
+                        <label for="psw" ><b>Phone number</b></label>
+                    </div>
+                    <input type="text" class="form -control form-control-lg">
+                    <button type="submit" class="registerbtn" onclick="hideForm()">Send</button>
+                </div >
+
+                <div  id="otp1" style="display: none;">
+                    <div class="row" id="otp1" >
+                        <div class="text-center mb-3 col-12">
+                            <label for="psw" ><b>Enter OTP</b></label>
+                        </div>
+                        <div class="col-3">
+                        <input type="text" class="form -control form-control-lg">
+                        </div>
+                        <div class="col-3">
+                        <input type="text" class=" form -control form-control-lg">
+                        </div>
+                        <div class="col-3">
+                        <input type="text" class=" form -control form-control-lg">
+                        </div>
+                        <div class="col-3">
+                        <input type="text" class="form -control form-control-lg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+
+<script>
+    function hideForm(){
+        document.getElementById('reg-form1').style.display="none";
+        document.getElementById('otp1').style.display="block";
+
+    }
+</script>
+</html>
