@@ -4,66 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
     <title>Registration</title>
 </head>
 
 <body>
+    <section id="initLanding">
+        <div class="initLanding container">
+            <div class="reg-container">
+                <div id="reg-form1" style="display: block;">
+                    <h2>Register</h2>
+                    <hr>   
+                    <div class="text-center"><label for="psw" ><b>Full Name</b></label></div>
+                    <input type="text" placeholder="Enter Full Name" name="name" id="name" required class="form-control">
 
-    <section id="reg-form">
-        <div class="reg-form">
-            <form action="/index.html">
-                <div class="reg-container">
-                    <h1>Bangladesh Railway</h1>
-                    <h2>Please fill in this form to create an account.</h2>
-                    <hr>
+                    <div class="text-center mt-3"><label for="psw" ><b>Date of Birth</b></label></div>
+                    <input type="date" placeholder="Enter DoB" name="dob" id="dob" required class="form-control">
 
-                    <div class="row">
-                        <div class="column">
-                            <label for="name"><b>Full Name</b></label>
-                            <input type="text" placeholder="Enter Full Name" name="name" id="name" required>
+                    <div class="text-center mt-3"><label for="psw" ><b>Email Address</b></label></div>
+                    <input type="text" placeholder="Enter Email" name="email" id="email" class="form-control">
+                    
+                    <button type="submit" class="registerbtn" onclick="hideForm('reg-form1', 'reg-form2')">
+                        Next
+                    </button>
+                </div >
+                <div id="reg-form2" style="display: none;">
+                    <h2>Register</h2>
+                    <hr>   
+                    <div class="text-center"><label for="psw" ><b>Phone Number</b></label></div>
+                    <input type="number" placeholder="Enter Phone Number" name="phone" id="phone" required class="form-control">
+
+                    <div class="text-center mt-3"><label for="psw" ><b>NID</b></label></div>
+                    <input type="number" placeholder="Enter NID" name="nid" id="nid" required class="form-control">
+
+                    <div class="text-center mt-3"><label for="psw" ><b>Password</b></label></div>
+                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required class="form-control">
+                    
+                    <div class="text-center mt-3"><label for="psw" ><b>Confirm Password</b></label></div>
+                    <input type="password" placeholder="Confirm Password" name="psw" id="psw" required class="form-control">
+                    
+                    <button type="submit" class="registerbtn" onclick="hideForm('reg-form2', 'reg-form3')">
+                        Next
+                    </button>
+                </div >
+                <div id="reg-form3" style="display: none;">
+                    <h2>Register</h2>
+                    <hr>   
+                    <div class="row" id="otp1" >
+                        <div class="text-center mb-3 col-12">
+                            <label for="psw" ><b>Enter OTP</b></label>
                         </div>
-    
-                        <div class="column">
-                            <label for="dob"><b>Date of Birth</b></label>
-                            <input type="date" placeholder="Enter DoB" name="dob" id="dob" required>
+                        <div class="col-3">
+                        <input type="number" class="form -control form-control-lg">
                         </div>
+                        <div class="col-3">
+                        <input type="number" class=" form -control form-control-lg">
+                        </div>
+                        <div class="col-3">
+                        <input type="number" class=" form -control form-control-lg">
+                        </div>
+                        <div class="col-3">
+                            <input type="number" class="form -control form-control-lg">
+                        </div>
+
+                        <div class="col-12">
+                            <button type="button" class="registerbtn">
+                                <a href="./search.html">Register</a> 
+                            </button>  
+                        </div>                  
                     </div>
+                </div >
+            </div>
 
-                    <div class="row">
-                        <div class="column">
-                            <label for="email"><b>Email Address</b></label>
-                            <input type="text" placeholder="Enter Email" name="email" id="email" required>
-                        </div>
-    
-                        <div class="column">
-                            <label for="phone"><b>Phone Number</b></label>
-                            <input type="number" placeholder="Enter Phone Number" name="phone" id="phone" required>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="column">
-                            <label for="nid"><b>NID Number</b></label>
-                            <input type="number" placeholder="Enter NID Number" name="nid" id="nid" required>
-                        </div>
-    
-                        <div class="column">
-                            <label for="psw"><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <button type="submit" class="registerbtn">Register</button>
-
-                    <h2>Already have an account? <a href="index.html">Go to Home</a></h2>
-                </div>
-            </form>
         </div>
     </section>
 
 </body>
+<script>
+    function hideForm(id1, id2){
+        document.getElementById(id1).style.display="none";
+        document.getElementById(id2).style.display="block";
+
+    }
+</script>
 
 </html>

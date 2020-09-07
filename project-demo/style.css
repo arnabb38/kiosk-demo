@@ -102,19 +102,21 @@ p {
 .search-form {
     justify-content: center;
     align-items: center;
-    padding: 25px 15px;
-    width: 100%;    
+    padding: 15px 15px;
+    /* width: 100%;     */
 }
 
 .reg-container {
     padding: 16px;
     background-color: whitesmoke;
+    width: 60%;
 }
 
 .search-container {
     padding: 16px;
     background-color: whitesmoke;
     border-radius: 50px;
+    width: 60%;
 }
 
 #reg-form .row{
@@ -154,7 +156,7 @@ input[type=number] {
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
-    border: none;
+    /* border: none; */
     background: #f1f1f1;
     font-size: larger;
 }
@@ -203,10 +205,15 @@ a {
 /* registration form end */
 
 .form-control-lg {
-    height: calc(1.5em + 5rem + 2px);
+    height: calc(1.5em + 3rem + 2px);
     font-size: 2.25rem;
 }
 
 label{
     font-size: 22px;
+}
+
+button a{
+    color: white;
+    font-size: 25px;
 }

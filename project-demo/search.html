@@ -4,52 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
     <title>Search</title>
 </head>
 
 <body>
-
-    <section id="search-form">
-        
-        <div class="search-form">
-            <img src="./assets/br-logo-removebg-preview.png" alt="Bangladesh Railway Logo">
-            <form action="/index.html">
-                <div class="search-container">
-
-                    <h1>Bangladesh Railway</h1>
-                    <hr>
-
-                    <div class="column">
-                        <div class="row">
-                            <label for="name"><b>LEAVING FROM</b></label>
-                            <input type="text" placeholder="Leaving Form" name="name" id="name" required>
-                        </div>
     
-                        <div class="row">
-                            <label for="dob"><b>DEPARTING DATE</b></label>
-                            <input type="date" placeholder="Departure Date" name="dob" id="dob" required>
-                        </div>
+    <section id="initLanding">
+        <div class="initLanding container">
+            <div class="search-container">
+                <h2>Search for Train</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="name"><b>LEAVING FROM</b></label>
+                        <input type="text" placeholder="Leaving Form" name="name" id="name" required>
                     </div>
 
-                    <div class="column">
-                        <div class="row">
+                    <div class="col-12 mt-3">
                             <label for="email"><b>GOING TO</b></label>
                             <input type="text" placeholder="Destination" name="email" id="email" required>
-                        </div>
-    
-                        <div class="row">
-                            <label for="phone"><b>TIME (OPTIONAL)</b></label>
-                            <input type="number" placeholder="Departure Time" name="phone" id="phone">
-                        </div>
                     </div>
 
-                    <hr>
-
-                    <button type="submit" class="registerbtn">Search</button>
-
+                    <div class="col-12 mt-3">
+                        <label for="dob"><b>DEPARTING DATE</b></label>
+                        <input type="date" placeholder="Departure Date" name="dob" id="dob" required>
+                    </div>
                 </div>
-            </form>
+                <button type="submit mt-3" class="registerbtn" style="font-size: 22px;" >Search</button>
+
+            </div>
+
         </div>
     </section>
 

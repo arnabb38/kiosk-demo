@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Search</title>
+</head>
+
+<body>
+
+    <section id="search-form">
+        
+        <div class="search-form">
+            <img src="./assets/br-logo-removebg-preview.png" alt="Bangladesh Railway Logo">
+            <form action="/index.html">
+                <div class="search-container">
+
+                    <h1>Bangladesh Railway</h1>
+                    <hr>
+
+                    <div class="column">
+                        <div class="row">
+                            <label for="name"><b>LEAVING FROM</b></label>
+                            <input type="text" placeholder="Leaving Form" name="name" id="name" required>
+                        </div>
+    
+                        <div class="row">
+                            <label for="dob"><b>DEPARTING DATE</b></label>
+                            <input type="date" placeholder="Departure Date" name="dob" id="dob" required>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="row">
+                            <label for="email"><b>GOING TO</b></label>
+                            <input type="text" placeholder="Destination" name="email" id="email" required>
+                        </div>
+    
+                        <div class="row">
+                            <label for="phone"><b>TIME (OPTIONAL)</b></label>
+                            <input type="number" placeholder="Departure Time" name="phone" id="phone">
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <button type="submit" class="registerbtn">Search</button>
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>

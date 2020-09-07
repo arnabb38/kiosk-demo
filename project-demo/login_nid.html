@@ -14,47 +14,23 @@
                 <div id="reg-form1">
                     <h2>Login with NID</h2>
                     <hr>   
-                    <div class="text-center">
-                        <label for="psw" ><b>NID number</b></label>
-                    </div>
+                    <div class="text-center"><label for="psw" ><b>NID number</b></label></div>
                     <input type="number" class="form -control form-control-lg">
-                    <button type="submit" class="registerbtn" onclick="hideForm()">Send</button>
+
+                    <div class="text-center mt-3"><label for="psw" ><b>Date of Birth</b></label></div>
+                    <input type="date" class="form -control form-control-lg">
+
+                    <div class="text-center mt-3"><label for="psw" ><b>Password</b></label></div>
+                    <input type="password" class="form -control form-control-lg">
+                    
+                    <button type="submit" class="registerbtn">
+                        <a href="./search.html">Login</a> 
+                    </button>
                 </div >
-
-                <div  id="otp1" style="display: none;">
-                    <div class="row" id="otp1" >
-                        <div class="text-center mb-3 col-12">
-                            <label for="psw" ><b>Enter OTP</b></label>
-                        </div>
-                        <div class="col-3">
-                        <input type="number" class="form -control form-control-lg">
-                        </div>
-                        <div class="col-3">
-                        <input type="number" class=" form -control form-control-lg">
-                        </div>
-                        <div class="col-3">
-                        <input type="number" class=" form -control form-control-lg">
-                        </div>
-                        <div class="col-3">
-                        <input type="number" class="form -control form-control-lg">
-                        </div>
-
-                        <button type="submit" class="registerbtn">Send</button>
-                    </div>
-
-                </div>
             </div>
 
         </div>
     </section>
     
 </body>
-
-<script>
-    function hideForm(){
-        document.getElementById('reg-form1').style.display="none";
-        document.getElementById('otp1').style.display="block";
-
-    }
-</script>
 </html>
