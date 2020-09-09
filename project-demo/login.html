@@ -1,56 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">    
     <title>Registration</title>
 </head>
-
 <body>
     <section id="initLanding">
         <div class="initLanding container">
             <div class="reg-container">
-                <div id="reg-form1" style="display: block;">
-                    <h2 class="text-green">Register</h2>
+                <div id="reg-form1">
+                    <h2 class="text-green">Login</h2>
                     <hr>   
-                    <div class="text-center"><label for="psw" ><b>Full Name</b></label></div>
-                    <input type="text" placeholder="Enter Full Name" name="name" id="name" required class="form-control">
-
-                    <div class="text-center mt-3"><label for="psw" ><b>Date of Birth</b></label></div>
-                    <input type="date" placeholder="Enter DoB" name="dob" id="dob" required class="form-control">
-
-                    <div class="text-center mt-3"><label for="psw" ><b>Email Address</b></label></div>
-                    <input type="text" placeholder="Enter Email" name="email" id="email" class="form-control">
-                    
-                    <button type="submit" class="registerbtn" onclick="hideForm('reg-form1', 'reg-form2')">
-                        Next
-                    </button>
-                </div >
-                <div id="reg-form2" style="display: none;">
-                    <h2 class="text-green">Register</h2>
-                    <hr>   
-                    <div class="text-center"><label for="psw" ><b>Phone Number</b></label></div>
-                    <input type="number" placeholder="Enter Phone Number" name="phone" id="phone" required class="form-control">
-
-                    <div class="text-center mt-3"><label for="psw" ><b>NID</b></label></div>
-                    <input type="number" placeholder="Enter NID" name="nid" id="nid" required class="form-control">
+                    <div class="text-center"><label for="psw" ><b>User name</b></label></div>
+                    <input type="number" class="form-control form-control-lg">
 
                     <div class="text-center mt-3"><label for="psw" ><b>Password</b></label></div>
-                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required class="form-control">
-                    
-                    <div class="text-center mt-3"><label for="psw" ><b>Confirm Password</b></label></div>
-                    <input type="password" placeholder="Confirm Password" name="psw" id="psw" required class="form-control">
-                    
-                    <button type="submit" class="registerbtn" onclick="hideForm('reg-form2', 'reg-form3')">
-                        Next
+                    <input type="password" class="form-control form-control-lg">
+
+                    <!-- <button type="submit" class="registerbtn" >
+                        <a href="./search.html">Login</a> 
                     </button>
+
+                    <div class="text-center">
+                        <a href="./index.html">Home</a>
+                    </div> -->
+                    <button type="submit" class="registerbtn" onclick="hideForm('reg-form1', 'reg-form3')" >
+                        Submit
+                    </button>
+
+                    <div class="text-center">
+                        <a href="./index.html">Home</a>
+                    </div>
                 </div >
+
+                
                 <div id="reg-form3" style="display: none;">
-                    <h2 class="text-green">Register</h2>
+                    <h2 class="text-green">Login</h2>
                     <hr>   
                     <div class="row" id="otp1" >
                         <div class="text-center mb-3 col-12">
@@ -71,7 +59,7 @@
 
                         <div class="col-12">
                             <button type="button" class="registerbtn">
-                                <a href="./search.html">Register</a> 
+                                <a href="./search.html">Login</a> 
                             </button> 
                             <div class="text-center">
                                 <a href="./index.html">Home</a>
@@ -83,19 +71,20 @@
 
         </div>
     </section>
-
+    
 </body>
+
 <script>
+    
     function hideForm(id1, id2){
         document.getElementById(id1).style.display="none";
         document.getElementById(id2).style.display="block";
     }
-
     function autofocusFn(blurID, focusID){
-        console.log("dfs")
         document.getElementById(blurID).blur() ;
         document.getElementById(focusID).focus() ;
     }
+
 </script>
 
 </html>
