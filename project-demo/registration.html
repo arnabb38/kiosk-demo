@@ -29,6 +29,13 @@
                     <button type="submit" class="registerbtn" onclick="hideForm('reg-form1', 'reg-form2')">
                         Next
                     </button>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="text-center">
+                                <a href="./index.html">Home</a>
+                            </div> 
+                        </div>
+                    </div>
                 </div >
                 <div id="reg-form2" style="display: none;">
                     <h2 class="text-green">Register</h2>
@@ -48,6 +55,18 @@
                     <button type="submit" class="registerbtn" onclick="hideForm('reg-form2', 'reg-form3')">
                         Next
                     </button>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="text-center">
+                                <a href="./index.html">Home</a>
+                            </div> 
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center" onclick="hideForm('reg-form2', 'reg-form1')">
+                                Back
+                            </div> 
+                        </div>
+                    </div>
                 </div >
                 <div id="reg-form3" style="display: none;">
                     <h2 class="text-green">Register</h2>
