@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">    
+    <title>Login</title>
+</head>
+<body>
+    <section id="initLanding">
+        <div class="initLanding container">
+            <div class="reg-container" style="width: 80%;">
+                <div id="reg-form1">
+                    <h2 class="text-green">Login</h2>
+                    <hr>   
+                    <div class="text-center"><label for="psw" ><b>User name</b></label></div>
+                    <input type="number" class="form-control">
+
+                    <div class="text-center mt-3"><label for="psw" ><b>Password</b></label></div>
+                    <input type="password" class="form-control">
+
+                    <!-- <button type="submit" class="registerbtn" >
+                        <a href="./search.html">Login</a> 
+                    </button>
+
+                    <div class="text-center">
+                        <a href="./index.html">Home</a>
+                    </div> -->
+                    <button type="submit" class="btn btn-block btn-success" onclick="hideForm('reg-form1', 'reg-form3')" >
+                        Submit
+                    </button>                    
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <div class="text-center">
+                                <a href="./index.html">Home</a>
+                            </div> 
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center">
+                                <a href="#">Forgot Password</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div >
+
+                
+                <div id="reg-form3" style="display: none;">
+                    <h2 class="text-green">Login</h2>
+                    <hr>   
+                    <div class="row" id="otp1" >
+                        <div class="text-center mb-3 col-12">
+                            <label for="psw" ><b>Enter OTP</b></label>
+                        </div>
+                        <div class="col-3">
+                        <input type="number" id="otpbox1" class="form-control form-control-lg" oninput="autofocusFn('otpbox1','otpbox2')" />
+                        </div>
+                        <div class="col-3">
+                        <input type="number" id="otpbox2" class=" form-control form-control-lg" oninput="autofocusFn('otpbox2','otpbox3')" />
+                        </div>
+                        <div class="col-3">
+                        <input type="number" id="otpbox3" class=" form-control form-control-lg" oninput="autofocusFn('otpbox3','otpbox4')" />
+                        </div>
+                        <div class="col-3">
+                            <input type="number" id="otpbox4" class="form-control form-control-lg"" oninput="autofocusFn('otpbox4','')" />
+                        </div>
+
+                        <div class="col-12">
+                            <button type="button" class="registerbtn">
+                                <a href="./search.html">Login</a> 
+                            </button> 
+                            <div class="text-center">
+                                <a href="./index.html">Home</a>
+                            </div>   
+                        </div>                
+                    </div>
+                </div >
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+
+<script>
+    
+    function hideForm(id1, id2){
+        document.getElementById(id1).style.display="none";
+        document.getElementById(id2).style.display="block";
+    }
+    function autofocusFn(blurID, focusID){
+        document.getElementById(blurID).blur() ;
+        document.getElementById(focusID).focus() ;
+    }
+
+</script>
+
+</html>
